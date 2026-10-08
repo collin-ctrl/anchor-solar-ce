@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Solar in Real Estate | Realtor CE Course</title>
+<meta name="description" content="Free 1-hour Realtor CE course by Anchor Roofing & Solar. Thursday, October 29, 12:15 to 1:30 PM in Johnstown, CO. Lunch provided.">
+<meta property="og:title" content="Solar in Real Estate: Free Realtor CE Course">
+<meta property="og:description" content="1 hr approved CE credit. Thu, Oct 29, 12:15 to 1:30 PM at Anchor Roofing & Solar, Johnstown. Lunch by Cheba Hut.">
+<meta property="og:image" content="img/hero-cottage.jpg">
+<link rel="icon" href="img/logo-black.png">
+<style>
+/* Layout: black slide-style hero with a chevron-cut photo, then stone "agenda" sheets, then a two-column RSVP. Mirrors the course deck. */
+@font-face{font-family:"Hanken Grotesk";src:url(fonts/hanken-grotesk-latin-300-normal.woff2) format("woff2");font-weight:300;font-display:swap}
+@font-face{font-family:"Hanken Grotesk";src:url(fonts/hanken-grotesk-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Hanken Grotesk";src:url(fonts/hanken-grotesk-latin-600-normal.woff2) format("woff2");font-weight:600;font-display:swap}
+@font-face{font-family:"Spline Sans";src:url(fonts/spline-sans-latin-400-normal.woff2) format("woff2");font-weight:400;font-display:swap}
+@font-face{font-family:"Spline Sans";src:url(fonts/spline-sans-latin-500-normal.woff2) format("woff2");font-weight:500;font-display:swap}
+
+:root{
+  --ink:#0c0f0f;        /* slide black */
+  --ink-2:#1a1e1d;
+  --stone:#e7e7e0;      /* slide stone */
+  --paper:#f3f3ee;
+  --mute:#5d605a;
+  --mute-dark:#a6a9a2;
+  --rule:#c9c9c0;
+  --go:#2fbf3a;         /* the deck's green flow arrows */
+  --warn:#b4471f;
+  --display:"Hanken Grotesk","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --body:"Spline Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --gutter:clamp(16px,5vw,64px);
+  --max:1200px;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+body{margin:0;background:var(--stone);color:var(--ink);font:16px/1.6 var(--body);-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3{font-family:var(--display);font-weight:400;line-height:.95;margin:0;text-wrap:balance;text-transform:uppercase;letter-spacing:-.02em}
+.wrap{max-width:var(--max);margin:0 auto;padding-inline:var(--gutter)}
+.eyebrow{font:500 12px/1 var(--body);letter-spacing:.14em;text-transform:uppercase}
+.arrow{display:inline-block;width:.9em;height:.9em;flex:none}
+:focus-visible{outline:2px solid var(--go);outline-offset:3px}
+
+/* ---------- HERO ---------- */
+.hero{background:var(--ink);color:#fff;position:relative;overflow:hidden}
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:22px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none}
+.brand img{width:46px;height:auto}
+.brand span{font:400 14px/1.25 var(--display);text-transform:uppercase;letter-spacing:.04em}
+.topbar .date{font:400 14px/1 var(--display);text-transform:uppercase;letter-spacing:.06em}
+.hero-grid{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:0;align-items:stretch;min-height:540px}
+.hero-photo{position:relative;margin-left:calc(var(--gutter) * -1)}
+.hero-photo img{width:100%;height:100%;object-fit:cover;clip-path:polygon(0 0,100% 0,100% 30%,72% 62%,100% 100%,0 100%)}
+.hero-copy{display:flex;flex-direction:column;justify-content:center;gap:28px;padding-block:24px 56px;min-width:0}
+.hero h1{font-size:clamp(52px,9.2vw,128px);font-weight:400;line-height:.88;margin-left:clamp(-120px,-8vw,0px);position:relative;z-index:2}
+.hero h1 span{display:block;background:var(--ink);padding:0 .14em 0 .06em;width:max-content;white-space:nowrap;border-radius:0 18px 18px 0}
+.lede{font-size:clamp(17px,1.6vw,20px);line-height:1.5;color:#dcdcd6;max-width:34ch;margin:0}
+.facts{display:flex;flex-wrap:wrap;gap:10px 28px;padding:0;margin:0;list-style:none;font:400 15px/1.3 var(--display);text-transform:uppercase;letter-spacing:.05em}
+.facts li{display:flex;gap:10px;align-items:center}
+.facts .arrow{color:var(--go)}
+.cta-row{display:flex;flex-wrap:wrap;align-items:center;gap:14px 22px}
+.btn{appearance:none;border:0;cursor:pointer;font:600 15px/1 var(--display);text-transform:uppercase;letter-spacing:.08em;padding:18px 26px;border-radius:999px;text-decoration:none;display:inline-flex;align-items:center;gap:10px;transition:transform .15s ease,background .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn-light{background:#fff;color:var(--ink)}
+.btn-dark{background:var(--ink);color:#fff}
+.btn-ghost{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+.seats{font:400 14px/1.3 var(--body);color:var(--mute-dark);display:flex;align-items:center;gap:8px}
+.seats .dot{width:8px;height:8px;border-radius:50%;background:var(--go);box-shadow:0 0 0 4px rgba(47,191,58,.18)}
+.seats.full .dot{background:var(--warn);box-shadow:0 0 0 4px rgba(180,71,31,.2)}
+
+/* starburst CE badge, the deck's zigzag circle */
+.badge{position:absolute;right:calc(var(--gutter) * .6);top:70px;width:150px;height:150px;display:grid;place-items:center;text-align:center;z-index:3;color:#fff}
+.badge svg{position:absolute;inset:0;width:100%;height:100%}
+.badge b{display:block;font:300 44px/1 var(--display)}
+.badge small{display:block;font:500 11px/1.25 var(--body);letter-spacing:.12em;text-transform:uppercase;margin-top:4px}
+
+/* ---------- AGENDA ---------- */
+.agenda{padding-block:clamp(64px,9vw,112px)}
+.agenda-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:24px 64px;align-items:end;margin-bottom:48px}
+.agenda h2{font-size:clamp(44px,7vw,96px)}
+.agenda-head p{margin:0;max-width:46ch;color:var(--mute);font-size:17px}
+.topics{list-style:none;margin:0;padding:0;border-top:1.5px solid var(--ink)}
+.topics li{display:grid;grid-template-columns:40px minmax(0,1fr) minmax(0,1.25fr);gap:12px 24px;align-items:baseline;padding-block:22px;border-bottom:1px solid var(--rule)}
+.topics .arrow{width:22px;height:22px;transform:translateY(3px)}
+.topics h3{font-size:clamp(20px,2.2vw,26px);line-height:1.1;letter-spacing:0}
+.topics p{margin:0;color:var(--mute)}
+.takeaway{margin-top:28px;display:flex;flex-wrap:wrap;gap:10px 28px;font:400 14px/1.4 var(--display);text-transform:uppercase;letter-spacing:.06em}
+.takeaway span{display:flex;gap:8px;align-items:center}
+
+/* ---------- WHY ---------- */
+.why{background:var(--ink);color:#fff;padding-block:clamp(64px,9vw,112px)}
+.why-grid{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:48px 72px;align-items:center}
+.why h2{font-size:clamp(40px,6vw,80px)}
+.why p{color:#cfd0ca;font-size:18px;max-width:48ch;margin:20px 0 0}
+.flow{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;margin-top:36px}
+.flow div{position:relative;border-top:1.5px solid #fff;padding-top:14px;padding-right:12px}
+.flow div::before{content:"";position:absolute;top:-6px;left:0;width:10px;height:10px;border-radius:50%;background:#fff}
+.flow b{display:block;font:400 18px/1.15 var(--display);text-transform:uppercase}
+.flow small{display:block;color:var(--mute-dark);font-size:13px;margin-top:6px;line-height:1.4}
+.why-photos{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.why-photos img{width:100%;aspect-ratio:3/4;object-fit:cover;filter:grayscale(1) contrast(1.05)}
+.why-photos img:nth-child(2){margin-top:48px}
+
+/* ---------- WORK ---------- */
+.work{padding-block:clamp(64px,9vw,112px) 0}
+.work-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:end;gap:16px;margin-bottom:28px}
+.work h2{font-size:clamp(36px,5vw,64px)}
+.work-head p{margin:0;color:var(--mute);max-width:40ch}
+.gallery{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:12px}
+.gallery figure{margin:0;position:relative;overflow:hidden;background:var(--ink)}
+.gallery img{width:100%;height:100%;object-fit:cover;transition:transform .6s ease}
+.gallery figure:hover img{transform:scale(1.03)}
+.gallery figcaption{position:absolute;left:12px;bottom:12px;background:rgba(12,15,15,.82);color:#fff;font:500 11px/1 var(--body);letter-spacing:.12em;text-transform:uppercase;padding:8px 10px}
+.g1{grid-column:span 7;aspect-ratio:3/2}
+.g2{grid-column:span 5;aspect-ratio:auto}
+.g3{grid-column:span 5;height:400px}
+.g4{grid-column:span 7;height:400px}
+
+/* ---------- RSVP ---------- */
+.rsvp{padding-block:clamp(64px,9vw,112px)}
+.rsvp-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:40px 64px;align-items:start}
+.rsvp h2{font-size:clamp(44px,7vw,96px)}
+.details{margin-top:32px;border-top:1.5px solid var(--ink)}
+.details > div{display:grid;grid-template-columns:110px minmax(0,1fr);gap:16px;padding-block:16px;border-bottom:1px solid var(--rule)}
+.details dt{font:500 12px/1.6 var(--body);letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.details dd{margin:0;font:400 18px/1.4 var(--display)}
+.details dd small{display:block;font:400 14px/1.5 var(--body);color:var(--mute);margin-top:2px}
+.details a{text-underline-offset:3px}
+.instructor{display:flex;gap:16px;align-items:center;margin-top:28px}
+.instructor .mono{width:56px;height:56px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font:400 20px/1 var(--display);flex:none}
+.instructor b{display:block;font:400 18px/1.2 var(--display);text-transform:uppercase}
+.instructor span{color:var(--mute);font-size:14px}
+
+.card{background:var(--paper);padding:clamp(24px,4vw,44px);border-radius:4px;position:relative}
+.card h3{font-size:28px;letter-spacing:0;margin-bottom:6px}
+.card .sub{margin:0 0 24px;color:var(--mute)}
+.field{display:flex;flex-direction:column;gap:6px;margin-bottom:18px}
+.field label{font:500 12px/1 var(--body);letter-spacing:.12em;text-transform:uppercase}
+.field label em{font-style:normal;color:var(--mute);letter-spacing:.04em;text-transform:none;font-size:12px}
+.field input,.field textarea{font:400 17px/1.4 var(--body);color:var(--ink);background:#fff;border:1.5px solid var(--rule);border-radius:4px;padding:14px 14px;width:100%;transition:border-color .15s}
+.field textarea{resize:vertical;min-height:84px}
+.field input:focus,.field textarea:focus{outline:none;border-color:var(--ink)}
+.field .err{color:var(--warn);font-size:13px;min-height:0}
+.field.bad input{border-color:var(--warn)}
+.form-foot{display:flex;flex-wrap:wrap;align-items:center;gap:14px 20px;margin-top:6px}
+.form-foot .btn{flex:1 1 auto;justify-content:center}
+.form-msg{font-size:14px;color:var(--warn);margin:12px 0 0}
+.fine{font-size:13px;color:var(--mute);margin:16px 0 0}
+.preview-note{background:#fff6d6;border:1px solid #e6d48a;color:#5a4a0c;font-size:13px;padding:10px 12px;border-radius:4px;margin-bottom:20px}
+
+.done{text-align:left}
+.done .check{width:64px;height:64px;margin-bottom:18px}
+.done h3{font-size:clamp(30px,4vw,40px)}
+.done .sub{margin-bottom:22px}
+.done .when{border-top:1.5px solid var(--ink);border-bottom:1px solid var(--rule);padding-block:14px;margin-bottom:22px;font:400 18px/1.45 var(--display)}
+.done .when small{display:block;font:400 14px/1.5 var(--body);color:var(--mute)}
+.cal-row{display:flex;flex-wrap:wrap;gap:10px}
+.cal-row .btn{padding:14px 18px;font-size:13px}
+
+/* ---------- FOOTER ---------- */
+footer{background:var(--ink);color:#cfd0ca;padding-block:56px 32px}
+.foot-grid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr) minmax(0,1fr);gap:32px;align-items:start}
+.foot-grid img{width:84px}
+.foot-grid h4{margin:0 0 10px;font:500 12px/1 var(--body);letter-spacing:.14em;text-transform:uppercase;color:#fff}
+.foot-grid p{margin:0;font-size:15px;line-height:1.7}
+.foot-grid a{color:#fff;text-underline-offset:3px}
+.foot-base{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;margin-top:48px;padding-top:20px;border-top:1px solid #2a2f2e;font-size:13px;color:var(--mute-dark)}
+.admin-link{background:none;border:0;color:var(--mute-dark);font:inherit;cursor:pointer;padding:0;text-decoration:underline;text-underline-offset:3px}
+.admin-link:hover{color:#fff}
+
+/* ---------- ADMIN ---------- */
+dialog{border:0;padding:0;border-radius:6px;max-width:min(980px,calc(100vw - 32px));width:100%;background:var(--paper);color:var(--ink)}
+dialog::backdrop{background:rgba(12,15,15,.72)}
+.dlg{padding:28px}
+.dlg-head{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:18px}
+.dlg-head h3{font-size:26px;letter-spacing:0}
+.x{background:none;border:0;font:300 30px/1 var(--display);cursor:pointer;color:var(--ink);padding:4px 8px}
+.pin-row{display:flex;gap:10px;flex-wrap:wrap}
+.pin-row input{font:400 22px/1 var(--display);letter-spacing:.4em;width:160px;padding:12px 14px;border:1.5px solid var(--rule);border-radius:4px;text-align:center}
+.stats{display:flex;flex-wrap:wrap;gap:10px 28px;margin:4px 0 16px;font:400 15px/1.3 var(--display);text-transform:uppercase;letter-spacing:.05em}
+.stats b{font-weight:600}
+.table-wrap{overflow-x:auto;border-top:1.5px solid var(--ink)}
+table{width:100%;border-collapse:collapse;font-size:14px;font-variant-numeric:tabular-nums}
+th,td{text-align:left;padding:10px 12px 10px 0;border-bottom:1px solid var(--rule);vertical-align:top;white-space:nowrap}
+td.wrap-cell{white-space:normal;min-width:180px}
+th{font:500 11px/1.2 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+.tag{display:inline-block;font:500 11px/1 var(--body);letter-spacing:.08em;text-transform:uppercase;padding:5px 8px;border-radius:999px;background:#dff3e0;color:#185c1e}
+.tag.wait{background:#f6e3da;color:#7a2f12}
+.dlg-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.dlg-actions .btn{padding:12px 16px;font-size:12px}
+.empty{color:var(--mute);padding:20px 0}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:900px){
+  .hero-grid{grid-template-columns:1fr;min-height:0}
+  .hero-photo{margin-inline:calc(var(--gutter) * -1);height:300px}
+  .hero-photo img{clip-path:polygon(0 0,100% 0,100% 82%,50% 100%,0 82%)}
+  .hero h1{margin-left:0;margin-top:-8px}
+  .badge{top:auto;bottom:auto;right:var(--gutter);top:330px;width:120px;height:120px}
+  .badge b{font-size:36px}
+  .agenda-head,.why-grid,.rsvp-grid,.foot-grid{grid-template-columns:1fr}
+  .topics li{grid-template-columns:32px minmax(0,1fr)}
+  .topics p{grid-column:2}
+  .g1,.g2{grid-column:span 12}
+  .g2{aspect-ratio:3/2}
+  .g3,.g4{grid-column:span 12;height:auto;aspect-ratio:3/2}
+  .g4{aspect-ratio:2/1}
+}
+@media (max-width:520px){
+  .badge{display:none}
+  .facts{flex-direction:column}
+  .flow{grid-template-columns:1fr;gap:18px}
+  .details > div{grid-template-columns:1fr;gap:2px}
+  .topbar .date{display:none}
+}
+</style>
+</head>
+<body>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="arr" viewBox="0 0 24 24"><path d="M5 5l14 14M19 8v11H8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square"/></symbol>
+</svg>
+
+<!-- ===== HERO ===== -->
+<header class="hero">
+  <div class="wrap">
+    <div class="topbar">
+      <a class="brand" href="#top" aria-label="Anchor Roofing & Solar"><img src="img/logo-white.png" alt=""><span>By Anchor<br>Roofing &amp; Solar</span></a>
+      <span class="date">29 October 2026</span>
+    </div>
+    <div class="hero-grid" id="top">
+      <div class="hero-photo"><img src="img/hero-cottage.jpg" alt="Solar array on a blue home in northern Colorado with fall cottonwoods and the foothills behind" fetchpriority="high"></div>
+      <div class="hero-copy">
+        <h1><span>Solar in</span><span>Real Estate</span></h1>
+        <p class="lede">A free Realtor CE course on listing, buying, and appraising homes with solar, so solar stops stalling your closings.</p>
+        <ul class="facts">
+          <li><svg class="arrow"><use href="#arr"/></svg>Thu, Oct 29 · 12:15 to 1:30 PM</li>
+          <li><svg class="arrow"><use href="#arr"/></svg>Johnstown, CO</li>
+          <li><svg class="arrow"><use href="#arr"/></svg>Free · Lunch provided</li>
+        </ul>
+        <div class="cta-row">
+          <a class="btn btn-light" href="#rsvp">Reserve my seat <svg class="arrow"><use href="#arr"/></svg></a>
+          <span class="seats" id="seatsHero"><span class="dot"></span><span>20 seats available</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="badge" aria-label="1 hour approved CE credit">
+    <svg viewBox="0 0 100 100" aria-hidden="true"><polygon id="burst" fill="none" stroke="#fff" stroke-width="1.6" stroke-linejoin="miter"/></svg>
+    <div><b>1 HR</b><small>Approved<br>CE credit</small></div>
+  </div>
+</header>
+
+<main>
+<!-- ===== AGENDA ===== -->
+<section class="agenda" aria-labelledby="agendaTitle">
+  <div class="wrap">
+    <div class="agenda-head">
+      <h2 id="agendaTitle">What we'll cover</h2>
+      <p>Built by a solar project coordinator who works these deals every week. Practical steps you can use on your next listing or buyer consult.</p>
+    </div>
+    <ol class="topics">
+      <li><svg class="arrow"><use href="#arr"/></svg><h3>Solar basics</h3><p>Grid-tied, off-grid, and hybrid battery systems in plain English, plus how to read a solar homeowner's utility bill and net metering credits.</p></li>
+      <li><svg class="arrow"><use href="#arr"/></svg><h3>Owned vs. leased vs. PPA</h3><p>Why ownership decides whether solar is real property, whether it shows up in the appraisal, and what the seller has to pay off or transfer.</p></li>
+      <li><svg class="arrow"><use href="#arr"/></svg><h3>Getting solar appraised</h3><p>The cost, income, and market approaches, building a PVvalue report, and completing the Residential Green and Energy Efficient Addendum.</p></li>
+      <li><svg class="arrow"><use href="#arr"/></svg><h3>Listing a solar home</h3><p>O&amp;E reports, the documents to collect from sellers, MLS green fields, and the call to buyer's agents that heads off surprises.</p></li>
+      <li><svg class="arrow"><use href="#arr"/></svg><h3>Representing the buyer</h3><p>Lease transfers, lender lease letters, supporting the appraisal, and the pre-closing solar handoff.</p></li>
+    </ol>
+    <div class="takeaway">
+      <span><svg class="arrow"><use href="#arr"/></svg>Take-home flowchart for listing homes with solar</span>
+      <span><svg class="arrow"><use href="#arr"/></svg>Open Q&amp;A</span>
+    </div>
+  </div>
+</section>
+
+<!-- ===== WHY ===== -->
+<section class="why" aria-labelledby="whyTitle">
+  <div class="wrap why-grid">
+    <div>
+      <h2 id="whyTitle">Solar shouldn't kill the deal</h2>
+      <p>Leased panels a buyer won't assume. An appraiser who gives the system zero value. A payoff nobody saw coming at the title table. Learn to spot each one early and keep your closing on schedule.</p>
+      <div class="flow" aria-label="Where solar shows up in a transaction">
+        <div><b>Pre-listing</b><small>Verify ownership, order the O&amp;E, gather docs</small></div>
+        <div><b>Under contract</b><small>Transfer the lease or support the appraisal</small></div>
+        <div><b>Pre-closing</b><small>Walkthrough and monitoring handoff</small></div>
+      </div>
+    </div>
+    <div class="why-photos">
+      <img src="img/truck-barn.jpg" alt="Anchor Roofing truck in front of a barn with a solar install" loading="lazy">
+      <img src="img/aerial-bw.jpg" alt="Aerial view of a residential roof with solar panels" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ===== WORK ===== -->
+<section class="work" aria-labelledby="workTitle">
+  <div class="wrap">
+    <div class="work-head">
+      <h2 id="workTitle">Installed by Anchor</h2>
+      <p>A few of the northern Colorado homes our crews have put solar on.</p>
+    </div>
+    <div class="gallery">
+      <figure class="g1"><img src="img/aerial-modern.jpg" alt="Aerial view of a modern home with two solar arrays on a gray shingle roof" loading="lazy"><figcaption>Roof mount</figcaption></figure>
+      <figure class="g2"><img src="img/aerial-roofmount.jpg" alt="Aerial view of a ranch home with a stepped solar array in a Colorado neighborhood" loading="lazy"><figcaption>Roof mount</figcaption></figure>
+      <figure class="g3"><img src="img/brick-house.jpg" alt="Brick two-story home with black solar panels" loading="lazy"><figcaption>Residential retrofit</figcaption></figure>
+      <figure class="g4"><img src="img/hq.jpg" alt="Anchor Roofing headquarters building in Johnstown" loading="lazy"><figcaption>Class location · Anchor HQ, Johnstown</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<!-- ===== RSVP ===== -->
+<section class="rsvp" id="rsvp" aria-labelledby="rsvpTitle">
+  <div class="wrap rsvp-grid">
+    <div>
+      <h2 id="rsvpTitle">Save your seat</h2>
+      <dl class="details">
+        <div><dt>Date</dt><dd>Thursday, October 29, 2026</dd></div>
+        <div><dt>Time</dt><dd>12:15 to 1:30 PM<small>Doors and lunch at 12:15</small></dd></div>
+        <div><dt>Where</dt><dd>Anchor Roofing &amp; Solar<small>4691 Concord Ave, Unit 1A, Johnstown, CO 80534 · <a href="https://www.google.com/maps/search/?api=1&query=4691+Concord+Ave+Unit+1A+Johnstown+CO" target="_blank" rel="noopener">Map</a></small></dd></div>
+        <div><dt>Credit</dt><dd>1 hour approved CE</dd></div>
+        <div><dt>Cost</dt><dd>Free<small>Lunch by Cheba Hut</small></dd></div>
+        <div><dt>Parking</dt><dd>Free on-site parking</dd></div>
+      </dl>
+      <div class="instructor">
+        <div class="mono" aria-hidden="true">CL</div>
+        <div><b>Collin Larsen</b><span>Instructor · Solar Project Coordinator, Anchor Roofing &amp; Solar</span></div>
+      </div>
+    </div>
+
+    <div class="card" id="formCard">
+      <div id="formView">
+        <div class="preview-note" id="previewNote" hidden>Preview mode: sign-ups are only saved in this browser. They save for real once the site is on Vercel.</div>
+        <h3>RSVP</h3>
+        <p class="sub" id="formSub">Takes 30 seconds. Your license number is used for your CE certificate.</p>
+        <form id="rsvpForm" novalidate>
+          <div class="field" id="f-name">
+            <label for="name">Full name</label>
+            <input id="name" name="name" autocomplete="name" required maxlength="120">
+            <span class="err" aria-live="polite"></span>
+          </div>
+          <div class="field" id="f-email">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" inputmode="email" required maxlength="160">
+            <span class="err" aria-live="polite"></span>
+          </div>
+          <div class="field" id="f-license">
+            <label for="license">Real estate license #</label>
+            <input id="license" name="license" autocomplete="off" required maxlength="40" placeholder="e.g. FA100012345">
+            <span class="err" aria-live="polite"></span>
+          </div>
+          <div style="position:absolute;left:-9999px" aria-hidden="true"><label for="website">Website</label><input id="website" name="website" tabindex="-1" autocomplete="off"></div>
+          <div class="field" id="f-diet">
+            <label for="dietary">Dietary restrictions <em>(optional)</em></label>
+            <textarea id="dietary" name="dietary" maxlength="300" placeholder="Vegetarian, gluten-free, allergies..."></textarea>
+          </div>
+          <div class="form-foot">
+            <button class="btn btn-dark" type="submit" id="submitBtn">Reserve my seat <svg class="arrow"><use href="#arr"/></svg></button>
+            <span class="seats" id="seatsForm" style="color:var(--mute)"><span class="dot"></span><span>20 seats available</span></span>
+          </div>
+          <p class="form-msg" id="formMsg" role="alert" hidden></p>
+        </form>
+      </div>
+
+      <div id="doneView" class="done" hidden>
+        <svg class="check" viewBox="0 0 100 100" aria-hidden="true"><polygon class="burst-fill" fill="#0c0f0f"/><path d="M33 51l11 11 23-24" fill="none" stroke="#fff" stroke-width="5" stroke-linecap="square"/></svg>
+        <h3 id="doneTitle">You're in</h3>
+        <p class="sub" id="doneSub">We'll see you there. Add it to your calendar so you don't miss lunch.</p>
+        <div class="when">Thursday, October 29 · 12:15 to 1:30 PM<small>Anchor Roofing &amp; Solar, 4691 Concord Ave, Unit 1A, Johnstown, CO · Free parking</small></div>
+        <div class="cal-row">
+          <a class="btn btn-dark" id="gcal" target="_blank" rel="noopener">Google Calendar</a>
+          <a class="btn btn-ghost" id="ocal" target="_blank" rel="noopener">Outlook</a>
+          <a class="btn btn-ghost" id="ical" download="solar-in-real-estate.ics">Apple / .ics</a>
+        </div>
+        <p class="fine">Plans changed? Email <a href="mailto:collin@anchorroofingllc.com">collin@anchorroofingllc.com</a> so we can open your seat for someone else.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <img src="img/logo-white.png" alt="Anchor Roofing & Solar">
+      </div>
+      <div>
+        <h4>Questions</h4>
+        <p>Collin Larsen<br><a href="tel:+19704307408">970-430-7408</a><br><a href="mailto:collin@anchorroofingllc.com">collin@anchorroofingllc.com</a></p>
+      </div>
+      <div>
+        <h4>Location</h4>
+        <p>Anchor Roofing &amp; Solar<br>4691 Concord Ave, Unit 1A<br>Johnstown, CO 80534</p>
+      </div>
+    </div>
+    <div class="foot-base">
+      <span>© 2026 Anchor Roofing, LLC</span>
+      <button class="admin-link" id="adminBtn" type="button">Admin</button>
+    </div>
+  </div>
+</footer>
+
+<dialog id="adminDlg" aria-labelledby="adminTitle">
+  <div class="dlg">
+    <div class="dlg-head">
+      <h3 id="adminTitle">RSVP list</h3>
+      <button class="x" type="button" id="adminClose" aria-label="Close">×</button>
+    </div>
+    <form id="pinForm" class="pin-row">
+      <input id="pin" type="password" inputmode="numeric" autocomplete="off" maxlength="8" placeholder="PIN" aria-label="Admin PIN">
+      <button class="btn btn-dark" type="submit">Unlock</button>
+      <p class="form-msg" id="pinMsg" hidden style="flex-basis:100%"></p>
+    </form>
+    <div id="adminBody" hidden>
+      <div class="stats" id="adminStats"></div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>#</th><th>Name</th><th>Email</th><th>License #</th><th>Dietary</th><th>Status</th><th>Signed up</th></tr></thead>
+          <tbody id="adminRows"></tbody>
+        </table>
+      </div>
+      <div class="dlg-actions">
+        <button class="btn btn-dark" type="button" id="copyEmails">Copy all emails</button>
+        <button class="btn btn-ghost" type="button" id="csvBtn">Download CSV</button>
+        <button class="btn btn-ghost" type="button" id="refreshBtn">Refresh</button>
+      </div>
+      <p class="fine" id="adminNote"></p>
+    </div>
+  </div>
+</dialog>
+
+<script>
+/* Sign-ups are saved by the /api functions on Vercel.
+   Opening this file directly from your computer runs a preview that saves in the browser only. */
+const CAPACITY = 20;
+const PREVIEW_PIN = "1003";   // preview only; the live PIN is checked on the server
+
+/* ---- starburst geometry, same zigzag circle as the course slides ---- */
+function burst(points, rOuter, rInner){
+  const pts=[];
+  for(let i=0;i<points*2;i++){
+    const r=i%2?rInner:rOuter, a=Math.PI*i/points - Math.PI/2;
+    pts.push((50+r*Math.cos(a)).toFixed(2)+","+(50+r*Math.sin(a)).toFixed(2));
+  }
+  return pts.join(" ");
+}
+document.getElementById("burst").setAttribute("points", burst(24,48,43));
+document.querySelectorAll(".burst-fill").forEach(p=>p.setAttribute("points", burst(20,49,43)));
+
+/* ---- calendar links ---- */
+const EVT={title:"Solar in Real Estate: Realtor CE Course",start:"20261029T181500Z",end:"20261029T193000Z",
+  loc:"Anchor Roofing & Solar, 4691 Concord Ave, Unit 1A, Johnstown, CO 80534",
+  desc:"1 hour approved CE credit. Free, lunch by Cheba Hut. Free parking. Questions: Collin Larsen, 970-430-7408, collin@anchorroofingllc.com"};
+const enc=encodeURIComponent;
+document.getElementById("gcal").href=`https://calendar.google.com/calendar/render?action=TEMPLATE&text=${enc(EVT.title)}&dates=${EVT.start}/${EVT.end}&location=${enc(EVT.loc)}&details=${enc(EVT.desc)}`;
+document.getElementById("ocal").href=`https://outlook.live.com/calendar/0/deeplink/compose?subject=${enc(EVT.title)}&startdt=2026-10-29T18:15:00Z&enddt=2026-10-29T19:30:00Z&location=${enc(EVT.loc)}&body=${enc(EVT.desc)}`;
+const ics=["BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//Anchor Roofing & Solar//CE//EN","BEGIN:VEVENT",
+  "UID:solar-re-ce-20261029@anchorroofingllc.com","DTSTAMP:20261008T120000Z",
+  "DTSTART:"+EVT.start,"DTEND:"+EVT.end,"SUMMARY:"+EVT.title,
+  "LOCATION:"+EVT.loc.replace(/,/g,"\\,"),"DESCRIPTION:"+EVT.desc.replace(/,/g,"\\,"),
+  "BEGIN:VALARM","TRIGGER:-PT1H","ACTION:DISPLAY","DESCRIPTION:Solar in Real Estate CE","END:VALARM",
+  "END:VEVENT","END:VCALENDAR"].join("\r\n");
+document.getElementById("ical").href=URL.createObjectURL(new Blob([ics],{type:"text/calendar"}));
+
+/* ---- storage layer: Vercel API when hosted, browser-only preview when opened as a file ---- */
+const LIVE = location.protocol !== "file:";
+const LS_KEY="solar-ce-preview-rsvps";
+function lsRows(){try{return JSON.parse(localStorage.getItem(LS_KEY)||"[]")}catch(e){return[]}}
+function lsSave(rows){try{localStorage.setItem(LS_KEY,JSON.stringify(rows))}catch(e){}}
+
+async function apiCount(){
+  if(!LIVE){const n=lsRows().filter(r=>r.status==="Confirmed").length;return{confirmed:n,cap:CAPACITY,left:Math.max(0,CAPACITY-n)}}
+  const r=await fetch("/api/rsvp",{cache:"no-store"});return r.json();
+}
+async function apiSubmit(d){
+  if(!LIVE){
+    const rows=lsRows();
+    const dup=rows.find(r=>r.email.toLowerCase()===d.email.toLowerCase());
+    if(dup) return{ok:true,duplicate:true,status:dup.status};
+    const n=rows.filter(r=>r.status==="Confirmed").length;
+    const status=n<CAPACITY?"Confirmed":"Waitlist";
+    rows.push({...d,status,time:new Date().toISOString()});lsSave(rows);
+    return{ok:true,status};
+  }
+  const r=await fetch("/api/rsvp",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(d)});
+  return r.json();
+}
+async function apiList(pin){
+  if(!LIVE){ if(pin!==PREVIEW_PIN) return{ok:false,error:"pin"}; return{ok:true,rows:lsRows(),cap:CAPACITY}; }
+  const r=await fetch("/api/admin",{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify({pin})});return r.json();
+}
+
+/* ---- seats ---- */
+let seatsLeft=CAPACITY;
+function paintSeats(){
+  for(const id of ["seatsHero","seatsForm"]){
+    const el=document.getElementById(id), t=el.lastElementChild;
+    el.classList.toggle("full",seatsLeft<=0);
+    t.textContent = seatsLeft<=0 ? "Class is full · join the waitlist"
+      : seatsLeft===1 ? "1 seat left" : seatsLeft+" of "+CAPACITY+" seats left";
+  }
+  document.getElementById("submitBtn").firstChild.textContent = seatsLeft<=0 ? "Join the waitlist " : "Reserve my seat ";
+  if(seatsLeft<=0) document.getElementById("formSub").textContent="All 20 seats are taken. Join the waitlist and we'll email you if a seat opens.";
+}
+async function refreshSeats(){
+  try{const c=await apiCount(); if(c&&typeof c.left==="number"){seatsLeft=c.left;paintSeats();}}catch(e){}
+}
+if(!LIVE) document.getElementById("previewNote").hidden=false;
+refreshSeats();
+
+/* ---- form ---- */
+const form=document.getElementById("rsvpForm");
+function setErr(id,msg){const f=document.getElementById(id);f.classList.toggle("bad",!!msg);f.querySelector(".err").textContent=msg||""}
+function validate(d){
+  let ok=true;
+  if(d.name.length<2){setErr("f-name","Enter your full name.");ok=false}else setErr("f-name");
+  if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(d.email)){setErr("f-email","Enter an email like name@brokerage.com.");ok=false}else setErr("f-email");
+  if(d.license.length<3){setErr("f-license","Enter your license number so we can report your CE credit.");ok=false}else setErr("f-license");
+  return ok;
+}
+form.addEventListener("submit",async e=>{
+  e.preventDefault();
+  const v=id=>document.getElementById(id).value.trim();
+  const d={name:v("name"),email:v("email"),license:v("license"),dietary:v("dietary"),website:v("website")};
+  const msg=document.getElementById("formMsg"); msg.hidden=true;
+  if(!validate(d)){form.querySelector(".bad input")?.focus();return}
+  const btn=document.getElementById("submitBtn"); btn.disabled=true; btn.style.opacity=.6;
+  try{
+    const res=await apiSubmit(d);
+    if(!res||!res.ok) throw new Error(res&&res.error||"save");
+    showDone(d,res);
+  }catch(err){
+    msg.textContent="We couldn't save your RSVP. Check your connection and try again, or call Collin at 970-430-7408.";
+    msg.hidden=false;
+  }finally{btn.disabled=false;btn.style.opacity=1}
+});
+function showDone(d,res){
+  const first=d.name.split(/\s+/)[0];
+  const wait=res.status==="Waitlist";
+  document.getElementById("doneTitle").textContent = wait ? "You're on the waitlist, "+first : "You're in, "+first;
+  document.getElementById("doneSub").textContent = res.duplicate
+    ? "You already signed up with this email, so your spot is saved. Here are the details again."
+    : wait ? "All seats are taken right now. We'll email "+d.email+" if one opens up."
+    : "Your seat is saved. Add it to your calendar so you don't miss lunch.";
+  document.getElementById("formView").hidden=true;
+  document.getElementById("doneView").hidden=false;
+  document.getElementById("formCard").scrollIntoView({behavior:"smooth",block:"start"});
+  refreshSeats();
+}
+
+/* ---- admin ---- */
+const dlg=document.getElementById("adminDlg");
+let adminRows=[], adminPin="";
+document.getElementById("adminBtn").onclick=()=>{dlg.showModal();document.getElementById("pin").focus()};
+document.getElementById("adminClose").onclick=()=>dlg.close();
+dlg.addEventListener("click",e=>{if(e.target===dlg)dlg.close()});
+document.getElementById("pinForm").addEventListener("submit",async e=>{
+  e.preventDefault();
+  adminPin=document.getElementById("pin").value.trim();
+  await loadAdmin();
+});
+document.getElementById("refreshBtn").onclick=loadAdmin;
+async function loadAdmin(){
+  const m=document.getElementById("pinMsg"); m.hidden=true;
+  try{
+    const res=await apiList(adminPin);
+    if(!res.ok){m.textContent=res.error==="pin"?"That PIN didn't work. Try again.":"Couldn't load the list. Try again in a minute.";m.hidden=false;return}
+    adminRows=res.rows||[];
+    document.getElementById("pinForm").hidden=true;
+    document.getElementById("adminBody").hidden=false;
+    renderAdmin();
+  }catch(err){m.textContent="Couldn't reach the sign-up list. Check your connection.";m.hidden=false}
+}
+function fmtTime(t){const d=new Date(t);return isNaN(d)?String(t||""):d.toLocaleString("en-US",{month:"short",day:"numeric",hour:"numeric",minute:"2-digit"})}
+function renderAdmin(){
+  const conf=adminRows.filter(r=>r.status!=="Waitlist").length, wait=adminRows.length-conf;
+  const diets=adminRows.filter(r=>r.dietary).length;
+  const s=document.getElementById("adminStats"); s.textContent="";
+  [["Confirmed",conf+" / "+CAPACITY],["Waitlist",wait],["Dietary notes",diets]].forEach(([k,v])=>{
+    const span=document.createElement("span"); span.append(k+": "); const b=document.createElement("b"); b.textContent=v; span.append(b); s.append(span);
+  });
+  const tb=document.getElementById("adminRows"); tb.textContent="";
+  if(!adminRows.length){const tr=tb.insertRow();const td=tr.insertCell();td.colSpan=7;td.className="empty";td.textContent="No sign-ups yet. They'll show up here as realtors RSVP.";return}
+  adminRows.forEach((r,i)=>{
+    const tr=tb.insertRow();
+    [String(i+1),r.name,r.email,r.license,r.dietary||"—"].forEach((v,j)=>{const td=tr.insertCell();td.textContent=v;if(j===4)td.className="wrap-cell"});
+    const st=tr.insertCell(); const tag=document.createElement("span"); tag.className="tag"+(r.status==="Waitlist"?" wait":""); tag.textContent=r.status||"Confirmed"; st.append(tag);
+    tr.insertCell().textContent=fmtTime(r.time);
+  });
+  document.getElementById("adminNote").textContent = LIVE ? "Live from the site's database." : "Preview mode: showing sign-ups saved in this browser only.";
+}
+document.getElementById("copyEmails").onclick=async e=>{
+  const list=adminRows.map(r=>r.email).join(", ");
+  try{await navigator.clipboard.writeText(list);e.target.textContent="Copied"}catch(err){prompt("Copy these emails:",list)}
+  setTimeout(()=>e.target.textContent="Copy all emails",1800);
+};
+document.getElementById("csvBtn").onclick=()=>{
+  const q=v=>'"'+String(v??"").replace(/"/g,'""')+'"';
+  const csv=[["Name","Email","License #","Dietary","Status","Signed up"].map(q).join(",")]
+    .concat(adminRows.map(r=>[r.name,r.email,r.license,r.dietary,r.status,fmtTime(r.time)].map(q).join(","))).join("\n");
+  const a=document.createElement("a"); a.href=URL.createObjectURL(new Blob([csv],{type:"text/csv"})); a.download="solar-ce-rsvps.csv"; a.click();
+};
+</script>
+</body>
+</html>

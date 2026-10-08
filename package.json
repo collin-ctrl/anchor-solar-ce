@@ -1,0 +1,10 @@
+{
+  "name": "anchor-solar-ce",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Solar in Real Estate Realtor CE landing page and RSVP sign-ups",
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "@upstash/redis": "^1.35.0"
+  }
+}
